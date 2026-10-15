@@ -29,11 +29,11 @@ return {
       })
     end,
     config = function(_, opts)
-      local palette = require("catppuccin.palettes").get_palette()
+      local palette = require("tokyonight.colors").setup()
       local groups = {
-        MiniIconsMauve = palette.mauve,
-        MiniIconsPeach = palette.peach,
-        MiniIconsSky = palette.sky,
+        MiniIconsMauve = palette.purple,
+        MiniIconsPeach = palette.orange,
+        MiniIconsSky = palette.cyan,
       }
 
       for group, color in pairs(groups) do
